@@ -1,0 +1,42 @@
+======Before Return from Subroutine 2 Status=======
+==================Stack Status ==================================
+Stack contents at 307  = 0
+Stack contents at 306 = 0
+Stack contents at 305 = BB0D
+Stack contents at 304 = b07
+==================Registers & Memory Status======================
+AC = 14
+Register = 2
+PC = B12
+IR = C000
+Memory 940 = 8
+Memory 941 = 28
+Memory 942 = 14
+Number of instruction executed = 21
+======Before Return from Subroutine 1 Status=======
+==================Stack Status ==================================
+Stack contents at 303  = 2
+Stack contents at 302 = 2
+Stack contents at 301 = BB00
+Stack contents at 300 = 406
+==================Registers & Memory Status======================
+AC = 14
+Register = C
+PC = B0C
+IR = C000
+Memory 940 = 14
+Memory 941 = 28
+Memory 942 = 14
+Number of instruction executed = 26
+===========End of Program Status==========
+==================Stack Status ==================================
+No Data in Stack!
+==================Registers & Memory Status======================
+AC = 23
+Register = 5
+PC = 40B
+IR = F000
+Memory 940 = 14
+Memory 941 = 23
+Memory 942 = 14
+Number of instruction executed = 31

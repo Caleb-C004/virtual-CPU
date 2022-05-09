@@ -1,0 +1,49 @@
+==================
+===Main Program=====
+==================
+
+1. 400 1940 ;load AC from memory 940 - AC is 5
+2. 401 5941 ;add to AC from memory 941 - AC is 8
+3. 402 2940 ;store AC in memory 940 - 940 has value 13 (hex D)
+4. 403 6002 ;load register with 2
+5. 404 3000 ;load AC from register - AC is 2
+6. 405 2942 ;store AC to memroy 942 - 942 has value 2
+7. 406 BB00 ; branch to subroutine at address B00
+8. 407 1941 ;load AC from memory 941 - AC is 40 (hex 28)
+9. 408 6005 ;load register with operand 5
+10. 409 9000 ;subtract register from AC - AC is 35
+11. 40A 2941 ;store AC to memory 941 - 941 has value 35 (hex 23)
+12. 40B F000 ;halt program
+
+===============
+==Subroutine 1===
+===============
+1. B00 600A ; load register with 10(hex A)
+2. B01 3000 ; load AC from register - AC is 10(hex A)
+3. B02 6004 ; load register with 4
+4. B03 8000 ;Multiply register to AC - AC is 40
+5. B04 2941 ;Store AC to memory 941 - 941 has value 40(hex 28)
+6. B05 6000 ;load register with 0
+7. B06 3000 ; load AC from register - AC is 0
+8. B07 BB0D ; branch to subroutine starting at address B0D
+9. B08 600C ; load register with C - decimal 12(hex C)
+10. B09 1940 ;load AC from memory 940 - AC is 13
+11. B0A 7000 ;add register to AC - AC is 25
+12. B0B 2940 ; store AC to memory 940 - 940 has value 25(hex 19)
+13. B0C C000 ;return from subroutine
+
+===============
+==Subroutine 2===
+===============
+1. B0D 1942 ; load AC from memory 942 - AC is 2
+2. B0E 4000 ; store AC to register - register is 2
+3. B0F 1941 ; load AC from memory 941 - AC is 40
+4. B10 A000 ; divide AC by register - AC is 20
+5. B11 2942 ; store AC to memory 942 - 942 is 20(hex 14)
+6. B12 C000 ;return from subroutine
+
+==============
+==Memory Data===
+===============
+1. 940 0005 ;loads memory 940 with value 5
+2. 941 0003 ;loads memory 941 with value 3
