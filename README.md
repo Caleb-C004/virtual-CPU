@@ -11,3 +11,5 @@ Memory locations 940, 941, and 942(Hexidecimal) are used to store values to be a
 
 Stack stores the CPU's register states in a stack whenever a subroutine is called for the CPU
 The stack memory locations are from 0 to 3FF (1024 locations)
+
+When the code is executed, it will promp for an input file, in this case, input.txt. The code will then execute and output to a textfile output.txt
